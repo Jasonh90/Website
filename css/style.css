@@ -4,15 +4,51 @@
     Fonts: Raleway & Open Sans
     ------------------------------------
     Colors:
-        Laser Lemon:        #FCFC67
+        Moon Yellow:        #FAC613
         River Bed:          #555C60
         Deep Sky Blue:      #0FCFFF
         White:              #fffff
         Black:              #0C0C0C
 ===================================== */
 
+/* ===================================== 
+                Html, Body
+======================================== */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    color: #555C60;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", sans-serif;
+    /* sans-serif in case Raleway cannot be found for some reason */
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    /* Thickness of characters */
+    line-height: 24px;
+}
+
+section {
+    background: #fff;
+    overflow: hidden;
+    /* What happens if content overflows element box */
+}
+
 #preloader {
-    background-color: white;
+    background-color: #fff;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -37,24 +73,35 @@
 /* ===================================== 
                 Home
 ======================================== */
+#home {
+    background: None;
+    height: 100%;
+}
+
 #home-bg-video {
     position: fixed;
     top: 50%;
     left: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%); /* work on all webkit-based browsers */
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    /* work on all webkit-based browsers */
     transform: translateX(-50%) translateY(-50%);
     min-width: 100%;
     min-height: 100%;
-    width: auto; /* Make sure it's good ratio all the time */
+    width: auto;
+    /* Make sure it's good ratio all the time */
     height: auto;
-    z-index: -1; /* always underneath everything */
+    z-index: -1;
+    /* always underneath everything */
     /* The following is fallback method */
-    background: url("../video/solo.jpg") no-repeat; /*just when video doesn't play */
-    background-size: cover; /* cover the background, always show up the way we want it. Scales background image as large as possible: bg area covered by img */
+    background: url("../video/solo.jpg") no-repeat;
+    /*just when video doesn't play */
+    background-size: cover;
+    /* cover the background, always show up the way we want it. Scales background image as large as possible: bg area covered by img */
 }
 
 #home-overlay {
-    background: rgba(0,0,0,0.8); /* Black with Opacity 0.8 */
+    background: rgba(0, 0, 0, 0.8);
+    /* Black with Opacity 0.8 */
     width: 100%;
     height: 100%;
     position: fixed;
@@ -63,3 +110,127 @@
     z-index: -1;
 }
 
+#home-content {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#home-content-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#home-heading h1 {
+    color: #fff;
+    font-size: 65px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 0;
+    display: inline-block;
+}
+
+#home-heading h1 span {
+    color: #FAC613;
+    font-weight: 500;
+}
+
+#home-text p {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 100;
+    margin: 8px 0 30px 0;
+}
+
+/* ===================================== 
+                Button
+======================================== */
+.btn-general {
+    font-family: 'Raleway', sans-serif;
+    border-radius: 28px;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin 0 6px;
+    padding: 12px 46px 12px 46px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.btn-home {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.btn-home:hover,
+.btn-home:focus {
+    color: #fff;
+    background-color: #FAC613;
+    border: 1px solid #FAC613;
+}
+
+/* ===================================== 
+                Arrow Down
+======================================== */
+#arrow-down {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    color: #fff;
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    margin-left: -16px;
+}
+
+#arrow-down:hover,
+#arrow-down:focus {
+    color: #FAC613;
+}
+
+/* ===================================== 
+                Content Boxes
+======================================== */
+.content-box-lg {
+    padding: 120px 0;
+}
+
+/* ===================================== 
+                Vertical Headings
+======================================== */
+.vertical-heading h5 {
+    color: #FAC613;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    word-spacing: 14px;
+    display: inline-block;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    position: relative;
+    top: 60px;
+    left: -40px;
+}
+
+.vertical-heading h2 {
+    margin: 0 0 0 35px;
+    font-size: 42px;
+    font-weight: 100;
+    line-height: 45px;
+}
+
+/* ===================================== 
+                About 01
+======================================== */
+#about-right p:first-child {
+    margin-bottom: 30px;
+}
+
+#about-bottom {
+    margin-top: 60px;
+}
+
+#about-bottom img {
+    margin: 0 auto;
+    /* Trick to make img stay centered */
+}
