@@ -1,0 +1,65 @@
+/* =====================================
+    Default Theme
+    ------------------------------------
+    Fonts: Raleway & Open Sans
+    ------------------------------------
+    Colors:
+        Laser Lemon:        #FCFC67
+        River Bed:          #555C60
+        Deep Sky Blue:      #0FCFFF
+        White:              #fffff
+        Black:              #0C0C0C
+===================================== */
+
+#preloader {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    /* keep it the entire background (large stack order) */
+}
+
+#status {
+    background-image: url(../img/preloader/Ripple-1.2s-200px.gif);
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+}
+
+/* ===================================== 
+                Home
+======================================== */
+#home-bg-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%); /* work on all webkit-based browsers */
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto; /* Make sure it's good ratio all the time */
+    height: auto;
+    z-index: -1; /* always underneath everything */
+    /* The following is fallback method */
+    background: url("../video/solo.jpg") no-repeat; /*just when video doesn't play */
+    background-size: cover; /* cover the background, always show up the way we want it. Scales background image as large as possible: bg area covered by img */
+}
+
+#home-overlay {
+    background: rgba(0,0,0,0.8); /* Black with Opacity 0.8 */
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
