@@ -79,14 +79,27 @@ $(function () {
     });
 });
 
+/* ===================================== 
+                Testimonial
+======================================== */
+$(function () { //short form of above.
+    $('#testimonial-slider').owlCarousel({
+        items: 1,
+        autoplay: false,
+        smartSpeed: 700, //milliseconds
+        loop: true,
+        autoplayHoverPause: true,
+        nav: true,
+        dots: false,
+        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
+    });
+});
 
-
-
-
-
-
-
-
-
-
-
+/* ===================================== 
+                Testimonial
+======================================== */
+$(function () {
+    $('#services-tabs').responsiveTabs({
+        animation: 'slide'
+    });
+});

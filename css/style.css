@@ -10,6 +10,13 @@ http://www.color-blindness.com/color-name-hue/
         White Smoke:        #f4f4f4
         White:              #fff
         Black:              #000
+        
+        # MAIN #
+        Navy Blue:          #0067CE
+
+        Cobalt Blue:        #0037CE
+        
+        Deep Sky Blue:      #0FCFFF
 ===================================== */
 
 /* ===================================== 
@@ -62,13 +69,13 @@ section {
 #status {
     background-image: url("../img/preloader/Ripple-1.2s-200px.gif");
     background-repeat: no-repeat;
-    width: 70px;
-    height: 70px;
+    width: 200px;
+    height: 200px;
     position: absolute;
     left: 50%;
     top: 50%;
-    margin-top: -35px;
-    margin-left: -35px;
+    margin-top: -100px;
+    margin-left: -100px;
 }
 
 /* ===================================== 
@@ -169,6 +176,19 @@ section {
     border: 1px solid #F4C613;
 }
 
+.btn-services {
+    color: #fff;
+    border: 1px solid #f4c613;
+    background-color: #f4c613;
+}
+
+.btn-services:hover,
+.btn-services:focus {
+    color: #fff;
+    background-color: #212226;
+    border: 1px solid #212226;
+}
+
 /* ===================================== 
                 Arrow Down
 ======================================== */
@@ -201,7 +221,7 @@ section {
 }
 
 /* ===================================== 
-                Vertical/Horizontal Headings
+        Vertical/Horizontal Headings
 ======================================== */
 .vertical-heading h5 {
     color: #F4C613;
@@ -214,7 +234,7 @@ section {
     transform: rotate(-90deg);
     position: relative;
     top: 60px;
-    left: -53px;
+    left: -39px;
 }
 
 .vertical-heading h2 {
@@ -557,6 +577,10 @@ ul.social-list li:nth-child(3) a:hover {
 /* ===================================== 
                 Portfolio
 ======================================== */
+#portfolio {
+    padding-bottom: 160px;
+}
+
 #portfolio .vertical-heading {
     margin-bottom: 50px;
 }
@@ -689,24 +713,124 @@ ul.social-list li:nth-child(3) a:hover {
     opacity: 1;
 }
 
+/* ===================================== 
+                Testimonials
+======================================== */
+#testimonials {
+    background: #f4f4f4;
+    padding-bottom: 45px;
+    overflow: visible;
+}
 
+#testimonials .vertical-heading {
+    padding: 80px 0;
+    margin-bottom: 50px;
+}
 
+#testimonial-slider {
+    background: #f4c613;
+    top: -120px;
+}
 
+.testimonial .row {
+    margin-bottom: 25px;
+}
 
+.testimonial {
+    padding: 20px 45px 0 45px;
+    color: #fff;
+}
 
+.testimonial h3 {
+    font-size: 32px;
+    line-height: 35px;
+}
 
+.testimonial .stars {
+    font-size: 20px;
+    margin: 20px 0 10px 0;
+}
 
+.testimonial p {
+    line-height: normal;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
 
+.author .author-name-des {
+    width: 100%;
+    margin-top: 25px;
+    text-align: left;
+}
 
+.author .author-name-des p {
+    margin: 0;
+}
 
+/* ===================================== 
+                Testimonials
+======================================== */
+#services {
+    background: #f4f4f4;
+}
 
+#services-tabs ul {
+    margin-bottom: 40px;
+}
 
+#services-tabs ul li {
+    padding: 5px 30px;
+}
 
+#services-tabs ul li a {
+    font-family: "Raleway", sans-serif;
+    font-size: 13px;
+    color: #212226;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 0;
+    text-decoration: none;
+}
 
+/* Tab Active State */
+#services-tabs ul li.r-tabs-state-active a {
+    color: #f4c613;
+    font-weight: 700;
+    border-bottom: 3px solid #f4c613;
+    padding-bottom: 5px;
+    -webkit-transition: border-color 300ms linear;
+    transition: border-color 300ms linear;
+}
 
+.service-tab .col-md-6 {
+    padding: 0;
+}
 
+.service-tab img {
+    width: 100%;
+    margin: 0 auto;
+}
 
+.service-tab .tab-bg {
+    background: #fff;
+    padding: 59px 30px;
+    min-height: 481.5px;
+}
 
+.service-tab h2 {
+    font-size: 48px;
+    color: #bbb;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
 
+.service-tab h3 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
 
-
+.service-tab p {
+    line-height: 24px;
+    margin-bottom: 30px;
+}
