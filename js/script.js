@@ -96,10 +96,20 @@ $(function () { //short form of above.
 });
 
 /* ===================================== 
-                Testimonial
+                Services
 ======================================== */
 $(function () {
     $('#services-tabs').responsiveTabs({
         animation: 'slide'
+    });
+});
+
+/* ===================================== 
+                Stats
+======================================== */
+$(function () {
+    $(".counter").counterUp({
+        delay: 10,
+        time: 2000
     });
 });
