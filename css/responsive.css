@@ -1,0 +1,44 @@
+/* ===============================================
+            Bootstrap 3 Media Queries
+================================================ */
+
+/* Large Devices (Devices & Laptops) */
+@media (min-width: 1200px) and (max-width: 1299px) {
+    /* Navigation */
+    .site-nav-wrapper {
+        padding: 0 20px;
+    }
+    
+}
+
+/* Medium Devices (Landscape Tablets & Medium Desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Navigation */
+    .site-nav-wrapper {
+        padding: 0;
+    }
+    
+    /* Generic */
+    .vertical-heading h2 {
+        font-size: 29px;
+    }
+    
+    /* Services */
+    #services-tabs .tab-bg {
+        padding: 16px 30px;
+        min-height: 399px;
+    }
+    .service-tab p {
+        line-height: 20px;
+    }
+}
+
+/* Small Devices (Portrait Tablets & Small Desktops) */
+@media (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+/* Extra Small Devices (Landscape Phones & Portrait Tablets) */
+@media (max-width: 767px) {
+    
+}

@@ -27,22 +27,28 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
 
-    <!-- Owl-Carousel -->
+    <!-- Owl-Carousel CSS -->
     <link rel="stylesheet" href="css/owl-carousel/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl-carousel/owl.theme.default.min.css">
 
-    <!-- Magnific Popup-->
+    <!-- Magnific Popup CSS -->
     <link rel="stylesheet" href="css/magnific-popup/magnific-popup.css">
 
-    <!-- Responsive Tabs-->
+    <!-- Responsive Tabs CSS -->
     <link rel="stylesheet" href="css/responsive-tabs/responsive-tabs.css">
 
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate/animate.css">
+    
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="65">
     <!-- Preloader -->
     <div id="preloader">
         <div id="status">&nbsp;</div>
@@ -53,8 +59,10 @@
         <nav class="navbar navbar-fixed-top">
             <div class="container-fluid">
                 <div class="site-nav-wrapper">
+                   
                     <div class="navbar-header">
-                        <a href="#home" class="navbar-brand">
+                       <!-- Logo -->
+                        <a href="#home" class="navbar-brand smooth-scroll">
                             <img src="img/logo/logo.png" alt="logo">
                         </a>
                     </div>
@@ -63,13 +71,13 @@
                     <div class="container">
                         <div class="collapse navbar-collapse">
                             <ul class="nav navbar-nav pull-right">
-                                <li><a href="#home">Home</a></li>
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#team">Skills</a></li>
-                                <li><a href="#portfolio">Work</a></li>
-                                <li><a href="#interests">Interests</a></li>
-                                <li><a href="#services">Services</a></li>
-                                <li><a href="#contact">Contact</a></li>
+                                <li><a class="smooth-scroll" href="#home">Home</a></li>
+                                <li><a class="smooth-scroll" href="#about">About</a></li>
+                                <li><a class="smooth-scroll" href="#team">Skills</a></li>
+                                <li><a class="smooth-scroll" href="#portfolio">Work</a></li>
+                                <li><a class="smooth-scroll" href="#interests">Interests</a></li>
+                                <li><a class="smooth-scroll" href="#services">Services</a></li>
+                                <li><a class="smooth-scroll" href="#contact">Contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -108,7 +116,7 @@
 
                 <div id="home-btn">
                     <!-- btn class is button role is from bootstrap -->
-                    <a class="btn btn-general btn-home" href="#about" title="Start Now" role="button">Learn More</a> <!-- anchor element: defines hyperlink -->
+                    <a class="btn btn-general btn-home smooth-scroll" href="#about" title="Start Now" role="button">Learn More</a> <!-- anchor element: defines hyperlink -->
                 </div>
 
             </div>
@@ -116,7 +124,7 @@
         </div>
 
         <!-- Arrow Down, from font awesome -->
-        <a href="#about" id="arrow-down">
+        <a href="#about" id="arrow-down" class="smooth-scroll">
             <i class="fa fa-angle-down"></i>
         </a>
 
@@ -1249,6 +1257,10 @@
                 </div>
             </div>
         </div>
+        
+        <!-- Back To Top -->
+        <a href="#home" id="back-to-top" class="btn btn-sm btn-color btn-back-to-top smooth-scroll" title="Home" role="button"><i class="fa fa-angle-up"></i></a>
+        
     </footer>
     <!-- Footer Ends -->
 
@@ -1278,7 +1290,13 @@
     
     <!-- Google Map API -->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPplZpzZhCJYHS-J0sTaf4NSGwxtuAxPg&callback=initMap"></script>
+    
+    <!-- Easing -->
+    <script src="js/easing/jquery.easing.1.3.js"></script>
 
+    <!-- WOW JS -->
+    <script src="js/wow/wow.min.js"></script>
+    
     <!-- Custom JS -->
     <script src="js/script.js"></script>
 </body>

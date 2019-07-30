@@ -176,6 +176,9 @@ $(function () {
             
             // Show Dark Logo
             $(".navbar-brand img").attr("src", "img/logo/logo-dark.png");
+            
+            // Show back to top button
+            $("#back-to-top").fadeIn();
         } else {
             
             // Hide White Nav
@@ -183,18 +186,46 @@ $(function () {
             
             // Show Normal Logo
             $(".navbar-brand img").attr("src", "img/logo/logo.png");
+            
+            // Hide back to top button
+            $("#back-to-top").fadeOut();
         }
     }
     
 });
 
 
+/* Smooth Scrolling */
+$(function () {
+    $("a.smooth-scroll").click(function(event) {
+        event.preventDefault(); 
+        
+        var section_id = $(this).attr("href");
+        $("html, body").animate({
+            scrollTop: $(section_id).offset().top
+        }, 1250, "easeInOutExpo");
+        
+    });
+});
 
 
 
 
+/* ===================================== 
+                Animation
+======================================== */
 
+/* animate on scroll */
+$(function () {
+    new WOW().init();
+});
 
+$(window).on('load', function () {
+    
+    $("#home-heading-1").addClass("animated fadeInLeft");
+    $("#home-heading-2").addClass("animated fadeInRight");
+    
+});
 
 
 
