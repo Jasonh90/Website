@@ -222,8 +222,12 @@ $(function () {
 
 $(window).on('load', function () {
     
-    $("#home-heading-1").addClass("animated fadeInLeft");
-    $("#home-heading-2").addClass("animated fadeInRight");
+    $("#home-heading-1").addClass("animated fadeInDown");
+    $("#home-heading-2").addClass("animated fadeInLeft");
+//    $("#home-heading h1 span").addClass("animated fadeInRight");
+    $("#home-text").addClass("animated zoomIn");
+    $("#home-btn").addClass("animated zoomIn");
+    $("#arrow-down i").addClass("animated fadeInDown infinite");
     
 });
 
