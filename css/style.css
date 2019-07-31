@@ -152,7 +152,7 @@ section {
 }
 
 #home-text p span {
-/*    color: #f4c613;*/
+    /*    color: #f4c613;*/
     font-weight: 400;
     font-style: italic;
 }
@@ -893,7 +893,7 @@ ul.social-list li:nth-child(3) a:hover {
     background: rgba(61, 68, 68, 0.6);
     border-radius: 4px;
     min-height: 170px;
-    padding: 25px 50px;
+    padding: 25px 0;
     -webkit-transition: all 400ms linear;
     transition: all 400ms linear;
 }
@@ -943,9 +943,9 @@ ul.location-details {
 ul.location-details li {
     font-family: "Open Sans", sans-serif;
     margin-top: 12px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
 }
 
 ul.location-details li i {
@@ -982,7 +982,7 @@ ul.location-details li i {
 /* Contact Right Side */
 #contact-right {
     padding: 25px 30px;
-    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);   
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     border-radius: 4px;
 }
@@ -990,9 +990,11 @@ ul.location-details li i {
 #contact-right h4 {
     font-size: 24px;
 }
+
 #contact-right p {
     margin-bottom: 25px;
 }
+
 #contact-right form .form-control {
     font-family: "Open Sans", sans-serif;
     padding: 10px 15px;
@@ -1040,6 +1042,7 @@ footer p span {
 .site-nav-wrapper {
     padding: 0 85px;
 }
+
 .navbar-brand {
     padding: 13px 15px;
 }
@@ -1052,6 +1055,7 @@ ul.navbar-nav > li > a {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
 ul.navbar-nav > li > a:hover,
 ul.navbar-nav > li > a:focus {
     background: none;
@@ -1097,29 +1101,23 @@ ul.navbar-nav > li > a:focus {
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
 }
+
 #home-heading-2 {
     -webkit-animation-delay: 1.5s;
     animation-delay: 1.5s;
 }
+
 #home-text {
     -webkit-animation-delay: 2s;
     animation-delay: 2s;
 }
+
 #home-btn {
     -webkit-animation-delay: 2.5s;
     animation-delay: 2.5s;
 }
+
 #arrow-down i {
     -webkit-animation-delay: 3s;
     animation-delay: 3s;
 }
-
-
-
-
-
-
-
-
-
-

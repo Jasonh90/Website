@@ -17,7 +17,18 @@ $(function () { //short form of above.
         autoplayHoverPause: true,
         nav: true,
         dots: false,
-        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
+        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+        responsive: {
+            /* breakpoint from 0 up */
+            0: {
+                items: 1
+            },
+            /* breakpoint from 480 up*/
+            480: {
+                items: 2
+            },
+            
+        }
     });
 });
 
@@ -156,55 +167,55 @@ $(window).on('load', function () {
 
 /* Show & Hide White Navigation */
 $(function () {
-    
+
     // show/hide nav on page load
     showHideNav();
-    
-    $(window).scroll(function() {
-        
+
+    $(window).scroll(function () {
+
         // show/hide nav on window's scroll
         showHideNav();
-        
+
     });
-    
+
     function showHideNav() {
-        
-        if( $(window).scrollTop() > 50 ) {
-            
+
+        if ($(window).scrollTop() > 50) {
+
             // Show White Nav
             $("nav").addClass("white-nav-top");
-            
+
             // Show Dark Logo
             $(".navbar-brand img").attr("src", "img/logo/logo-dark.png");
-            
+
             // Show back to top button
             $("#back-to-top").fadeIn();
         } else {
-            
+
             // Hide White Nav
             $("nav").removeClass("white-nav-top");
-            
+
             // Show Normal Logo
             $(".navbar-brand img").attr("src", "img/logo/logo.png");
-            
+
             // Hide back to top button
             $("#back-to-top").fadeOut();
         }
     }
-    
+
 });
 
 
 /* Smooth Scrolling */
 $(function () {
-    $("a.smooth-scroll").click(function(event) {
-        event.preventDefault(); 
-        
+    $("a.smooth-scroll").click(function (event) {
+        event.preventDefault();
+
         var section_id = $(this).attr("href");
         $("html, body").animate({
             scrollTop: $(section_id).offset().top
         }, 1250, "easeInOutExpo");
-        
+
     });
 });
 
@@ -221,26 +232,12 @@ $(function () {
 });
 
 $(window).on('load', function () {
-    
+
     $("#home-heading-1").addClass("animated fadeInDown");
     $("#home-heading-2").addClass("animated fadeInLeft");
-//    $("#home-heading h1 span").addClass("animated fadeInRight");
+    //    $("#home-heading h1 span").addClass("animated fadeInRight");
     $("#home-text").addClass("animated zoomIn");
     $("#home-btn").addClass("animated zoomIn");
     $("#arrow-down i").addClass("animated fadeInDown infinite");
-    
+
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-

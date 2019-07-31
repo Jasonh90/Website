@@ -36,9 +36,88 @@
 /* Small Devices (Portrait Tablets & Small Desktops) */
 @media (min-width: 768px) and (max-width: 991px) {
     
+    /* Navigation */
+    .site-nav-wrapper {
+        padding: 0;
+    }
+    
+    /* Home */
+    #home-heading h1 {
+        font-size: 51px;
+    }
+    #home-text p {
+        font-size: 15px;
+    }
+    
+    /* Generic */
+    .btn-general {
+        padding: 10px 35px 10px 35px;
+        font-size: 11px;
+    }
+    /* Generic */
+    .vertical-heading h2 {
+        font-size: 29px;
+    }
+    
+    /* Statement */
+    #tech-statement h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+    /* Services */
+    .r-tabs-accordion-title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .r-tabs-accordion-title a{
+        font-family: "Raleway", sans-serif;
+        font-size: 13px;
+        color: #212226;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding: 0;
+        text-decoration: none;
+    }
+    /* Tab Active State */
+    .r-tabs-accordion-title.r-tabs-state-active a {
+        color: #f4c613;
+        font-weight: 700;
+        border-bottom: 3px solid #f4c613;
+        padding-bottom: 5px;
+        -webkit-transition: border-color 300ms linear;
+        transition: border-color 300ms linear;
+    }
+    
+    /* Contact */
+    ul.location-details li,
+    ul.location-details li i.fa.fa-envelope-o {
+        margin-right: 15px;
+    }
+    ul.location-details li i {
+        width:25px;
+    }
 }
 
 /* Extra Small Devices (Landscape Phones & Portrait Tablets) */
 @media (max-width: 767px) {
     
+    
+    
+    
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
