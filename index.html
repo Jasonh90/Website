@@ -10,6 +10,9 @@
 
     <!-- Title -->
     <title>Jason Huang</title>
+    
+    <meta name="description" content="Personal, creative and responsive Website built by Jason Huang.">
+    <meta name="keywords" content="Jason, Huang, Huangg, HTML5, CSS3, JQuery, Bootstrap, Web Development, Responsive website, Creative Website, Cornell University, Computer Science, Information Science, Design, Photo, Photography, Video, Coding, Programming, Developer, amazing, awesome, food, interesting, website">
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon/favicon.ico">
@@ -39,10 +42,10 @@
 
     <!-- Animate CSS -->
     <link rel="stylesheet" href="css/animate/animate.css">
-    
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
-    
+
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
 
@@ -53,20 +56,24 @@
     <div id="preloader">
         <div id="status">&nbsp;</div>
     </div>
-    
+
     <!-- Header -->
     <header>
         <nav class="navbar navbar-fixed-top">
             <div class="container-fluid">
                 <div class="site-nav-wrapper">
-                   
+
                     <div class="navbar-header">
-                       <!-- Logo -->
+
+                        <!-- Mobile Menu Open Button -->
+                        <span id="mobile-nav-open-btn">&#9776;</span>
+
+                        <!-- Logo -->
                         <a href="#home" class="navbar-brand smooth-scroll">
                             <img src="img/logo/logo.png" alt="logo">
                         </a>
                     </div>
-                    
+
                     <!-- Main Menu -->
                     <div class="container">
                         <div class="collapse navbar-collapse">
@@ -81,6 +88,23 @@
                             </ul>
                         </div>
                     </div>
+
+                    <!-- Mobile Menu -->
+                    <div id="mobile-nav">
+                        <span id="mobile-nav-close-btn">&times;</span>
+                        <div id="mobile-nav-content">
+                            <ul class="nav">
+                                <li><a class="smooth-scroll" href="#home">Home</a></li>
+                                <li><a class="smooth-scroll" href="#about">About</a></li>
+                                <li><a class="smooth-scroll" href="#team">Skills</a></li>
+                                <li><a class="smooth-scroll" href="#portfolio">Work</a></li>
+                                <li><a class="smooth-scroll" href="#interests">Interests</a></li>
+                                <li><a class="smooth-scroll" href="#services">Services</a></li>
+                                <li><a class="smooth-scroll" href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </nav>
@@ -141,6 +165,7 @@
 
                 <div class="container">
                     <div class="row">
+                       
                         <!-- About Left Side -->
                         <div class="col-md-6 col-sm-6 wow slideInLeft" data-wow-duration="1s">
                             <div id="about-left">
@@ -161,7 +186,7 @@
                     </div>
 
                     <!-- About Bottom -->
-                    <div class="row wow fadeInUp" data-wow-duration="1s">
+                    <div class="row wow fadeInUp" data-wow-duration="2s">
                         <div class="col-md-12">
                             <div id="about-bottom">
                                 <img src="img/about/about.png" alt="About Us" class="img-responsive">
@@ -182,7 +207,7 @@
                 <div class="container">
 
                     <div class="row">
-                       
+
                         <!-- About Item 01 -->
                         <div class="col-md-4 col-sm-4 wow slideInLeft" data-wow-duration="1s">
 
@@ -193,7 +218,7 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, libero. Sint et doloribus magni asperiores, voluptates ipsa vero, nobis quas lab</p>
                             </div>
                         </div>
-                        
+
                         <!-- About Item 02 -->
                         <div class="col-md-4 col-sm-4 wow slideInUp" data-wow-duration="1s">
                             <div class="about-item text-center">
@@ -203,7 +228,7 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, libero. Sint et doloribus magni asperiores, voluptates ipsa vero, nobis quas lab</p>
                             </div>
                         </div>
-                        
+
                         <!-- About Item 03 -->
                         <div class="col-md-4 col-sm-4 wow slideInRight" data-wow-duration="1s">
                             <div class="about-item text-center">
@@ -238,7 +263,7 @@
                         <div id="team-left">
                             <div class="vertical-heading">
                                 <h5>Who I am</h5>
-                                <h2>Skills I<br>have <strong>Developed</strong></h2>
+                                <h2>Skills I've<br><strong>Developed</strong></h2>
                             </div>
                             <p>The companies on the right has given me the opportunity to thrive in my career endeavers. Below are the skill proficiency levels I have so far established by engaging with these wonderful companies.</p>
                         </div>
@@ -451,7 +476,7 @@
                     <div class="col-md-12 wow slideInLeft">
                         <div class="vertical-heading">
                             <h5>My Projects</h5>
-                            <h2>The <br>Amazing <strong>Work</strong></h2>
+                            <h2>My <br>Amazing <strong>Work</strong></h2>
                         </div>
                     </div>
 
@@ -475,11 +500,11 @@
                 </div>
             </div>
 
-            <section id="portfolio-wrapper" class="wow fadeInUp" data-wow-duration="1.75s">
+            <section id="portfolio-wrapper" class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
                 <div class="container-fluid">
                     <div class="row no-gutters">
                         <div id="isotope-container">
-                            <div class="col-md-3 col-sm-6 front back app">
+                            <div class="col-md-3 col-sm-6 col-xs-12 front back app">
 
                                 <!-- Portfolio Item 01 -->
                                 <div class="portfolio-item">
@@ -503,7 +528,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-sm-6 front web design">
+                            <div class="col-md-3 col-sm-6 col-xs-12 front web design">
 
                                 <!-- Portfolio Item 02 -->
                                 <div class="portfolio-item">
@@ -527,7 +552,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-sm-6 front web">
+                            <div class="col-md-3 col-sm-6 col-xs-12 front web">
 
                                 <!-- Portfolio Item 03 -->
                                 <div class="portfolio-item">
@@ -551,7 +576,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-sm-6 front">
+                            <div class="col-md-3 col-sm-6 col-xs-12 front">
 
                                 <!-- Portfolio Item 04 -->
                                 <div class="portfolio-item">
@@ -575,7 +600,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-sm-6 projects">
+                            <div class="col-md-3 col-sm-6 col-xs-12 projects">
 
                                 <!-- Portfolio Item 05 -->
                                 <div class="portfolio-item">
@@ -599,7 +624,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-sm-6 app">
+                            <div class="col-md-3 col-sm-6 col-xs-12 app">
 
                                 <!-- Portfolio Item 06 -->
                                 <div class="portfolio-item">
@@ -623,7 +648,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-sm-6 back web">
+                            <div class="col-md-3 col-sm-6 col-xs-12 back web">
 
                                 <!-- Portfolio Item 07 -->
                                 <div class="portfolio-item">
@@ -647,7 +672,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-sm-6 front app projects">
+                            <div class="col-md-3 col-sm-6 col-xs-12 front app projects">
 
                                 <!-- Portfolio Item 08 -->
                                 <div class="portfolio-item">
@@ -704,11 +729,11 @@
 
                             <div class="row">
 
-                                <div class="col-md-6 col-sm-6">
+                                <div class="col-md-6 col-sm-6 col-xs-6">
                                     <h3>Quality Support</h3>
                                 </div>
 
-                                <div class="col-md-6 col-sm-6">
+                                <div class="col-md-6 col-sm-6 col-xs-6">
                                     <div class="stars text-right">
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
@@ -723,10 +748,10 @@
 
                             <div class="author">
                                 <div class="row">
-                                    <div class="col-md-2 col-sm-3">
+                                    <div class="col-md-2 col-sm-3 col-xs-6">
                                         <img src="img/testimonial/client-1.jpg" alt="client" class="img-responsive img-circle">
                                     </div>
-                                    <div class="col-md-10 col-sm-9">
+                                    <div class="col-md-10 col-sm-9 col-xs-6">
                                         <div class="author-name-des">
                                             <p>John Bobby</p>
                                             <p>Senior Developer</p>
@@ -742,11 +767,11 @@
 
                             <div class="row">
 
-                                <div class="col-md-6 col-sm-6">
+                                <div class="col-md-6 col-sm-6 col-xs-6">
                                     <h3>Quality Support</h3>
                                 </div>
 
-                                <div class="col-md-6 col-sm-6">
+                                <div class="col-md-6 col-sm-6 col-xs-6">
                                     <div class="stars text-right">
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
@@ -761,10 +786,10 @@
 
                             <div class="author">
                                 <div class="row">
-                                    <div class="col-md-2 col-sm-3">
+                                    <div class="col-md-2 col-sm-3 col-xs-6">
                                         <img src="img/testimonial/client-2.jpg" alt="client" class="img-responsive img-circle">
                                     </div>
-                                    <div class="col-md-10 col-sm-9">
+                                    <div class="col-md-10 col-sm-9 col-xs-6">
                                         <div class="author-name-des">
                                             <p>John Bobby</p>
                                             <p>Senior Developer</p>
@@ -781,11 +806,11 @@
 
                             <div class="row">
 
-                                <div class="col-md-6 col-sm-6">
+                                <div class="col-md-6 col-sm-6 col-xs-6">
                                     <h3>Quality Support</h3>
                                 </div>
 
-                                <div class="col-md-6 col-sm-6">
+                                <div class="col-md-6 col-sm-6 col-xs-6">
                                     <div class="stars text-right">
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
@@ -800,10 +825,10 @@
 
                             <div class="author">
                                 <div class="row">
-                                    <div class="col-md-2 col-sm-3">
+                                    <div class="col-md-2 col-sm-3 col-xs-6">
                                         <img src="img/testimonial/client-3.jpg" alt="client" class="img-responsive img-circle">
                                     </div>
-                                    <div class="col-md-10 col-sm-9">
+                                    <div class="col-md-10 col-sm-9 col-xs-6">
                                         <div class="author-name-des">
                                             <p>John Bobby</p>
                                             <p>Senior Developer</p>
@@ -819,11 +844,11 @@
 
                             <div class="row">
 
-                                <div class="col-md-6 col-sm-6">
+                                <div class="col-md-6 col-sm-6 col-xs-6">
                                     <h3>Rate Me!</h3>
                                 </div>
 
-                                <div class="col-md-6 col-sm-6">
+                                <div class="col-md-6 col-sm-6 col-xs-6">
                                     <div class="stars text-right">
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
@@ -838,10 +863,10 @@
 
                             <div class="author">
                                 <div class="row">
-                                    <div class="col-md-2 col-sm-3">
+                                    <div class="col-md-2 col-sm-3 col-xs-6">
                                         <img src="img/testimonial/client-3.jpg" alt="client" class="img-responsive img-circle">
                                     </div>
-                                    <div class="col-md-10 col-sm-9">
+                                    <div class="col-md-10 col-sm-9 col-xs-6">
                                         <div class="author-name-des">
                                             <p>First name, Last name</p>
                                             <p>Job Title</p>
@@ -877,7 +902,7 @@
 
                 <div class="row wow fadeInUp" data-wow-duration="2s">
 
-                    <div class="col-md-3 col-sm-3">
+                    <div class="col-md-3 col-sm-3 col-xs-6">
 
                         <!-- Stats Item 01 -->
                         <div class="stats-item text-center">
@@ -889,7 +914,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3 col-sm-3">
+                    <div class="col-md-3 col-sm-3 col-xs-6">
 
                         <!-- Stats Item 02 -->
                         <div class="stats-item text-center">
@@ -901,7 +926,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3 col-sm-3">
+                    <div class="col-md-3 col-sm-3 col-xs-6">
 
                         <!-- Stats Item 03 -->
                         <div class="stats-item text-center">
@@ -913,7 +938,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3 col-sm-3">
+                    <div class="col-md-3 col-sm-3 col-xs-6">
 
                         <!-- Stats Item 04 -->
                         <div class="stats-item text-center">
@@ -1173,8 +1198,8 @@
                                         <div class="location">
                                             <h4>United States</h4>
                                             <ul class="location-details">
-                                                <li><i class="fa fa-mobile"></i>+1(929) 431 - 2161</li>
-                                                <li><i class="fa fa-envelope-o"></i>jhuang0325@gmail.com</li>
+                                                <li><i class="fa fa-mobile"></i><span>+1(929) 431 - 2161</span></li>
+                                                <li><i class="fa fa-envelope"></i><span>jhuang0325@gmail.com</span></li>
                                                 <li><i class="fa fa-map-marker"></i><span>The Greater New York Area, NYC</span></li>
                                             </ul>
                                         </div>
@@ -1242,7 +1267,7 @@
         </div>
     </section>
     <!-- Contact Ends -->
-    
+
     <!-- Google Map -->
     <section id="google-map">
         <div class="container-fluid">
@@ -1252,7 +1277,7 @@
         </div>
     </section>
     <!-- Google Map Ends -->
-    
+
     <!-- Footer -->
     <footer class="text-center">
         <div class="container">
@@ -1264,10 +1289,10 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Back To Top -->
-        <a href="#home" id="back-to-top" class="btn btn-sm btn-color btn-back-to-top smooth-scroll hidden-sm" title="Home" role="button"><i class="fa fa-angle-up"></i></a>
-        
+        <a href="#home" id="back-to-top" class="btn btn-sm btn-color btn-back-to-top smooth-scroll hidden-sm hidden-xs" title="Home" role="button"><i class="fa fa-angle-up"></i></a>
+
     </footer>
     <!-- Footer Ends -->
 
@@ -1294,16 +1319,16 @@
 
     <!-- Counter JS -->
     <script src="js/counter/jquery.counterup.min.js"></script>
-    
+
     <!-- Google Map API -->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPplZpzZhCJYHS-J0sTaf4NSGwxtuAxPg&callback=initMap"></script>
-    
-    <!-- Easing -->
+
+    <!-- Easing JS -->
     <script src="js/easing/jquery.easing.1.3.js"></script>
 
     <!-- WOW JS -->
     <script src="js/wow/wow.min.js"></script>
-    
+
     <!-- Custom JS -->
     <script src="js/script.js"></script>
 </body>

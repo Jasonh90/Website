@@ -26,8 +26,8 @@ $(function () { //short form of above.
             /* breakpoint from 480 up*/
             480: {
                 items: 2
-            },
-            
+            }
+
         }
     });
 });
@@ -41,7 +41,7 @@ $(function () {
         $('.progress-bar').each(function () {
             $(this).animate({
                 width: $(this).attr('aria-valuenow') + "%"
-            }, 1000);
+            }, 2222);
         });
         this.destroy(); /* Only Appear once */
     }, {
@@ -159,6 +159,13 @@ $(window).on('load', function () {
     marker.addListener('click', function () {
         infowindow.open(map, marker);
     });
+    
+    // 4. Resize Function
+    google.maps.event.addDomListener(window, 'resize', function() {
+        var center = map.getCenter();
+        google.maps.event.trigger(map, 'resize');
+        map.setCenter(center);
+    });
 });
 
 /* ===================================== 
@@ -219,9 +226,6 @@ $(function () {
     });
 });
 
-
-
-
 /* ===================================== 
                 Animation
 ======================================== */
@@ -241,3 +245,33 @@ $(window).on('load', function () {
     $("#arrow-down i").addClass("animated fadeInDown infinite");
 
 });
+
+
+/* ===================================== 
+                Mobile Menu
+======================================== */
+$(function () {
+    
+    // Show mobile nav
+    $("#mobile-nav-open-btn").click(function() {
+        $("#mobile-nav").css("height", "100%");
+        
+    });
+    
+    // Hide mobile nav
+    $("#mobile-nav-close-btn, #mobile-nav a").click(function() {
+        $("#mobile-nav").css("height", "0%");
+        
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
