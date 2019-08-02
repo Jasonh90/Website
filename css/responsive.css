@@ -211,8 +211,9 @@
 
     /* Home */
     #home-heading h1 {
-        font-size: 22px;
+        font-size: 30px;
     }
+    
 
     #home-text p {
         font-size: 13px;
@@ -436,10 +437,6 @@
 @media (max-width: 480px) {
 
     /* Home */
-    #home-heading h1 {
-        font-size: 10px;
-    }
-
     #home-text p {
         font-size: 11px;
         line-height: 16px;

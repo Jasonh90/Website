@@ -470,7 +470,7 @@ ul.social-list li:nth-child(4) a:hover {
     background: #3f729b;
     border-color: transparent;
 }
-ul.social-list li:nth-child(4) a:hover {
+ul.social-list li:nth-child(5) a:hover {
     background: #fffc00;
     border-color: transparent;
 }
@@ -864,12 +864,15 @@ ul.social-list li:nth-child(4) a:hover {
 .service-tab img {
     width: 100%;
     margin: 0 auto;
+    min-height: 480px;
+    max-height: 480px;
 }
 
 .service-tab .tab-bg {
     background: #fff;
     padding: 59px 30px;
-    min-height: 481.5px;
+    min-height: 480px;
+    max-height: 480px;
 }
 
 .service-tab h2 {
