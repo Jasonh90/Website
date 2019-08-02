@@ -78,6 +78,10 @@ section {
     margin-left: -100px;
 }
 
+.ital {
+    font-style: italic;
+}
+
 /* ===================================== 
                 Home
 ======================================== */
@@ -444,23 +448,34 @@ ul.social-list a {
     transition: all 400ms linear;
 }
 
+ul.social-list a i {
+    font-size: 16px;
+}
+
 ul.social-list li:nth-child(1) a:hover {
-    background: #3b5998;
+    background: #007fff;
     border-color: transparent;
 }
 
 ul.social-list li:nth-child(2) a:hover {
-    background: #00aced;
+    background: #3b5998;
     border-color: transparent;
 }
 
 ul.social-list li:nth-child(3) a:hover {
-    background: #dd4b39;
+    background: #00aced;
     border-color: transparent;
 }
-
+ul.social-list li:nth-child(4) a:hover {
+    background: #3f729b;
+    border-color: transparent;
+}
+ul.social-list li:nth-child(4) a:hover {
+    background: #fffc00;
+    border-color: transparent;
+}
 /* ===================================== 
-                Slider Buttons
+            Owl-Carousel
 ======================================== */
 .owl-theme .owl-nav [class*=owl-] {
     color: #212226;
@@ -474,7 +489,7 @@ ul.social-list li:nth-child(3) a:hover {
 }
 
 /* ===================================== 
-                Slider Buttons
+            Slider Buttons
 ======================================== */
 .skill {
     margin-bottom: 20px;
@@ -1002,7 +1017,7 @@ ul.location-details li i {
 
 #contact-right form .form-control {
     font-family: "Open Sans", sans-serif;
-    padding: 10px 15px;
+    padding: 12px;
     font-size: 12px;
     line-height: 24px;
 }
@@ -1012,7 +1027,7 @@ ul.location-details li i {
 }
 
 /* ===================================== 
-                Contact
+                Map
 ======================================== */
 #map {
     height: 600px;
