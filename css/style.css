@@ -169,7 +169,7 @@ section {
     border-radius: 28px;
     font-size: 13px;
     text-transform: uppercase;
-    margin 0 6px;
+    margin: 0 6px;
     padding: 12px 46px 12px 46px;
     -webkit-transition: all .5s;
     transition: all .5s;
@@ -466,14 +466,17 @@ ul.social-list li:nth-child(3) a:hover {
     background: #00aced;
     border-color: transparent;
 }
+
 ul.social-list li:nth-child(4) a:hover {
     background: #3f729b;
     border-color: transparent;
 }
+
 ul.social-list li:nth-child(5) a:hover {
     background: #fffc00;
     border-color: transparent;
 }
+
 /* ===================================== 
             Owl-Carousel
 ======================================== */
