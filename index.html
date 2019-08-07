@@ -1091,9 +1091,8 @@
                         <!-- Contact Right -->
                         <div id="contact-right">
 
-                            <script> var submitted = false; </script>
-                            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {alert('Thank you so much for reaching out! I will reply shortly. If you would like to send another message, you can do so below. Have a great day!');}"></iframe>
-                            <form class="form" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLScSKvsFK2Vtv1fCExtBnemBuAInuXPYboAPj29zht9aux2wQQ/formResponse" method="post" onsubmit="submitted=true" target="hidden_iframe">
+                            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="submitForm()"></iframe>
+                            <form class="form"  id="contactForm" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLScSKvsFK2Vtv1fCExtBnemBuAInuXPYboAPj29zht9aux2wQQ/formResponse" method="post" onsubmit="submitted=true" target="hidden_iframe">
 
                                 <h4>Send Message</h4>
                                 <p>Feedback, review, question? Hire me? See what I am up to? Fill this out now! I will reach out as soon as possible. Make sure to fill out all the fields.</p>
@@ -1111,7 +1110,7 @@
                                     </div>
                                     <div class="col-md-6 col-sm-6">
                                         <div class="form-group">
-                                            <input name="entry.805460585" type="tel" class="form-control" id="phone" placeholder="Phone Number">
+                                            <input name="entry.805460585" type="number" class="form-control" id="phone" placeholder="Phone Number">
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-sm-6">
