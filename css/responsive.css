@@ -472,6 +472,11 @@
         font-size: 12px;
         line-height: 25px;
     }
+    
+    /* Services */
+    #services .horizontal-heading {
+        margin-bottom: 100px
+    }
 }
 
 /* Extra Small Devices (Portrait Phones & Smaller Devices) */
