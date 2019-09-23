@@ -274,12 +274,12 @@ function resetForm() {
 
 var submitted = false;
 
-function submitForm() {
-    // Clear Form
-    document.getElementById("contactForm").reset();
+// function submitForm() {
+//     // Clear Form
+//     document.getElementById("contactForm").reset();
 
-    // Display Message
-    if (submitted) {
-        alert('Thank you so much for reaching out! I will reply shortly. If you would like to send another message, you can do so below. Have a great day!');
-    }
-}
+//     // Display Message
+//     if (submitted) {
+//         alert('Thank you so much for reaching out! I will reply shortly. If you would like to send another message, you can do so below. Have a great day!');
+//     }
+// }

@@ -1135,7 +1135,18 @@
 
                         <!-- Contact Right -->
                         <div id="contact-right">
+                            <!-- Will change this later. -->
+                            <script>
+                                function submitForm() {
+                                    // Clear Form
+                                    document.getElementById("contactForm").reset();
 
+                                    // Display Message
+                                    if (submitted) {
+                                        alert('Thank you so much for reaching out! I will reply shortly. If you would like to send another message, you can do so below. Have a great day!');
+                                    }
+                                }
+                            </script>
                             <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="submitForm()"></iframe>
                             <form class="form" id="contactForm" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLScSKvsFK2Vtv1fCExtBnemBuAInuXPYboAPj29zht9aux2wQQ/formResponse" method="post" onsubmit="submitted=true" target="hidden_iframe">
 
