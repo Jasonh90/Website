@@ -1,14 +1,14 @@
 /* ===================================== 
                 Preloader
 ======================================== */
-$(window).on('load', function () { //window object (monitor load event)
+$(window).on('load', function() { //window object (monitor load event)
     $('#status').fadeOut();
     $('#preloader').delay(350).fadeOut('slow');
 });
 /* ===================================== 
                 Team
 ======================================== */
-$(function () { //short form of above.
+$(function() { //short form of above.
     $('#team-members').owlCarousel({
         items: 2,
         autoplay: true,
@@ -35,10 +35,10 @@ $(function () { //short form of above.
 /* ===================================== 
                 Progress Bars
 ======================================== */
-$(function () {
+$(function() {
 
-    $("#progress-elements").waypoint(function () {
-        $('.progress-bar').each(function () {
+    $("#progress-elements").waypoint(function() {
+        $('.progress-bar').each(function() {
             $(this).animate({
                 width: $(this).attr('aria-valuenow') + "%"
             }, 2222);
@@ -52,14 +52,14 @@ $(function () {
 /* ===================================== 
                 Portfolio
 ======================================== */
-$(window).on('load', function () {
+$(window).on('load', function() {
     // Initialize isotope plugin
     $("#isotope-container").isotope({
 
     });
 
     //filter items on button click
-    $("#isotope-filters").on('click', 'button', function () {
+    $("#isotope-filters").on('click', 'button', function() {
 
         //get filter value
         var filterValue = $(this).attr('data-filter');
@@ -80,7 +80,7 @@ $(window).on('load', function () {
 /* ===================================== 
                 Magnifier
 ======================================== */
-$(function () {
+$(function() {
     $("#portfolio-wrapper").magnificPopup({
         delegate: 'a', //child items selector, by clicking on it popup will open
         type: 'image',
@@ -93,7 +93,7 @@ $(function () {
 /* ===================================== 
                 Testimonial
 ======================================== */
-$(function () { //short form of above.
+$(function() { //short form of above.
     $('#testimonial-slider').owlCarousel({
         items: 1,
         autoplay: false,
@@ -109,7 +109,7 @@ $(function () { //short form of above.
 /* ===================================== 
                 Services
 ======================================== */
-$(function () {
+$(function() {
     $('#services-tabs').responsiveTabs({
         animation: 'slide'
     });
@@ -118,67 +118,67 @@ $(function () {
 /* ===================================== 
                 Stats
 ======================================== */
-$(function () {
+$(function() {
     $(".counter").counterUp({
         delay: 10,
         time: 2000
     });
 });
 
-/* ===================================== 
-                Google Map
-======================================== */
-$(window).on('load', function () {
+// /* ===================================== 
+//                 Google Map
+// ======================================== */
+// $(window).on('load', function () {
 
-    // Map Variables
-    var addressString = 'The Greater New York Area, NYC';
-    var myLatlng = {
-        lat: 40.757026,
-        lng: -73.986123
-    };
+//     // Map Variables
+//     var addressString = 'The Greater New York Area, NYC';
+//     var myLatlng = {
+//         lat: 40.757026,
+//         lng: -73.986123
+//     };
 
-    // 1. Render Map
-    var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 11,
-        center: myLatlng
-    });
+//     // 1. Render Map
+//     var map = new google.maps.Map(document.getElementById('map'), {
+//         zoom: 11,
+//         center: myLatlng
+//     });
 
-    // 2. Add Marker
-    var marker = new google.maps.Marker({
-        position: myLatlng,
-        map: map,
-        title: "Click To See Address"
-    });
+//     // 2. Add Marker
+//     var marker = new google.maps.Marker({
+//         position: myLatlng,
+//         map: map,
+//         title: "Click To See Address"
+//     });
 
-    // 3. Add Info Window
-    var infowindow = new google.maps.InfoWindow({
-        content: addressString
-    });
+//     // 3. Add Info Window
+//     var infowindow = new google.maps.InfoWindow({
+//         content: addressString
+//     });
 
-    // Show info window when user clicks marker
-    marker.addListener('click', function () {
-        infowindow.open(map, marker);
-    });
-    
-    // 4. Resize Function
-    google.maps.event.addDomListener(window, 'resize', function() {
-        var center = map.getCenter();
-        google.maps.event.trigger(map, 'resize');
-        map.setCenter(center);
-    });
-});
+//     // Show info window when user clicks marker
+//     marker.addListener('click', function () {
+//         infowindow.open(map, marker);
+//     });
+
+//     // 4. Resize Function
+//     google.maps.event.addDomListener(window, 'resize', function() {
+//         var center = map.getCenter();
+//         google.maps.event.trigger(map, 'resize');
+//         map.setCenter(center);
+//     });
+// });
 
 /* ===================================== 
                 Navigation
 ======================================== */
 
 /* Show & Hide White Navigation */
-$(function () {
+$(function() {
 
     // show/hide nav on page load
     showHideNav();
 
-    $(window).scroll(function () {
+    $(window).scroll(function() {
 
         // show/hide nav on window's scroll
         showHideNav();
@@ -214,8 +214,8 @@ $(function () {
 
 
 /* Smooth Scrolling */
-$(function () {
-    $("a.smooth-scroll").click(function (event) {
+$(function() {
+    $("a.smooth-scroll").click(function(event) {
         event.preventDefault();
 
         var section_id = $(this).attr("href");
@@ -231,11 +231,11 @@ $(function () {
 ======================================== */
 
 /* animate on scroll */
-$(function () {
+$(function() {
     new WOW().init();
 });
 
-$(window).on('load', function () {
+$(window).on('load', function() {
 
     $("#home-heading-1").addClass("animated fadeInDown");
     $("#home-heading-2").addClass("animated fadeInLeft");
@@ -250,18 +250,18 @@ $(window).on('load', function () {
 /* ===================================== 
                 Mobile Menu
 ======================================== */
-$(function () {
-    
+$(function() {
+
     // Show mobile nav
     $("#mobile-nav-open-btn").click(function() {
         $("#mobile-nav").css("height", "100%");
-        
+
     });
-    
+
     // Hide mobile nav
     $("#mobile-nav-close-btn, #mobile-nav a").click(function() {
         $("#mobile-nav").css("height", "0%");
-        
+
     });
 });
 
@@ -269,21 +269,17 @@ $(function () {
                 Contact
 ======================================== */
 function resetForm() {
-  document.getElementById("contactForm").reset();
+    document.getElementById("contactForm").reset();
 }
 
-var submitted = false; 
+var submitted = false;
 
 function submitForm() {
     // Clear Form
     document.getElementById("contactForm").reset();
-    
+
     // Display Message
     if (submitted) {
         alert('Thank you so much for reaching out! I will reply shortly. If you would like to send another message, you can do so below. Have a great day!');
     }
 }
-
-
-
-
