@@ -82,6 +82,10 @@ section {
     font-style: italic;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 /* ===================================== 
                 Home
 ======================================== */
@@ -243,6 +247,10 @@ section {
     padding: 100px 0px;
 }
 
+.content-box-sm {
+    padding: 50px 0px;
+}
+
 /* ===================================== 
         Vertical/Horizontal Headings
 ======================================== */
@@ -307,14 +315,14 @@ section {
                 About 02
 ======================================== */
 #about-02 {
-    background-color: #f4f4f4;
+    background-color: #A17BB7;
 }
 
 .about-item {
     background-color: #fff;
     padding: 80px 30px;
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0 10px rgba(110, 0, 113, 0.1);
+    box-shadow: 0 0 10px rgba(110, 0, 113, 0.6);
     /* horizontal, vertical, blur, [color, opacity] */
 }
 
@@ -552,8 +560,16 @@ ul.social-list li:nth-child(5) a:hover {
 }
 
 #statement .content-box-lg {
-    background: rgba(0, 0, 0, 0.3);
+    background: linear-gradient(rgba(255, 133, 133, 0.3), rgba(146, 103, 38, 0.3) 170%);
     /* Dim out parallax */
+}
+
+#tech-statement {   
+    background: linear-gradient(rgba(255, 133, 133, 1), rgba(146, 103, 38, 1) 170%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    font-weight: bold;
 }
 
 #tech-statement h3 {
@@ -572,8 +588,15 @@ ul.social-list li:nth-child(5) a:hover {
 /* ===================================== 
                 Weaknesses 01
 ======================================== */
+#weaknesses {
+    background-color: #926726;
+    color: white;
+}
+
 #weaknesses img {
     margin: 60px 0;
+    background-color: #050d25;
+    box-shadow: 0 0 20px 5px rgba(66, 46, 0, 0.704);
 }
 
 .interest {
@@ -601,7 +624,7 @@ ul.social-list li:nth-child(5) a:hover {
 }
 
 .interest:hover h5 {
-    color: #212226;
+    color: #fff;
 }
 
 .interest h4 {
@@ -615,6 +638,10 @@ ul.social-list li:nth-child(5) a:hover {
 
 .interest span {
     font-style: italic;
+}
+
+#growth {
+    background-color: #36F31B;
 }
 
 /* ===================================== 
@@ -814,7 +841,7 @@ ul.social-list li:nth-child(5) a:hover {
                 Testimonials
 ======================================== */
 #strengths {
-    background: #f4f4f4;
+    background: #FF8585;
 }
 
 
