@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Important Meta Tags - these should be set for all websites -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title -->
+    <title>Jason Huang</title>
+
+    <meta name="description" content="A personal, creative and responsive Website built by Jason Huang.">
+    <meta name="keywords"
+        content="Jason, Huang, Huangg, HTML5, CSS3, JQuery, Bootstrap, Web Development, Responsive website, Creative Website, Cornell University, Computer Science, Information Science, Design, Photo, Photography, Video, Coding, Programming, Developer, amazing, awesome, food, interesting, website">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+
+    <!-- Google Fonts -->
+    <!-- Add here from fonts.google.com -->
+    <!-- Will be used inside CSS, so has to be before CSS line -->
+    <!-- The two fonts we are using are Raleway and Open Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+
+    <!-- Owl-Carousel CSS -->
+    <link rel="stylesheet" href="css/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl-carousel/owl.theme.default.min.css">
+
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup/magnific-popup.min.css">
+
+    <!-- Responsive Tabs CSS -->
+    <link rel="stylesheet" href="css/responsive-tabs/responsive-tabs.min.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate/animate.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<style>
+    body,
+    html {
+        height: 100%;
+        margin: 0;
+    }
+
+    .img {
+        background-image: url('img/tech/sunset.jpg');
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        color: #000;
+        font-size: 25px;
+    }
+
+    .topleft {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+
+        /* background-color: darkorange; */
+        /* border-radius: 25px; */
+        /* padding: 10px 5px 5px 5px; */
+    }
+
+    .middle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    a {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 30%);
+        text-decoration: none;
+        cursor: default;
+        color: darkorange;
+        border-radius: 40px;
+        padding: 8px 0;
+        transition: all 400ms linear;
+        width: 100%;
+    }
+
+    a:hover {
+        color: #fff;
+        background-color: darkorange;
+        text-decoration: none;
+    }
+
+    .hoverable {
+        cursor: pointer;
+    }
+
+    hr {
+        margin: auto;
+        width: 40%;
+        color: darkorange;
+    }
+</style>
+
+<body>
+
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+
+    <div class="img">
+        <div class="topleft">
+            <img src="img/logo/logo.png" alt="logo">
+        </div>
+        <div class="middle">
+            <h1 id="coming-soon"></h1>
+            <hr>
+            <a id="countdown" style="font-size:30px"></a>
+            <!-- <h1>Who am I?</h1>
+    <hr>
+    <a href="/leadership/portfolio.html">
+        Click here to find out!
+    </a> -->
+        </div>
+    </div>
+
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jan 10, 2021 18:00:00").getTime();
+
+        // Update the count down every 1 second
+        var countdownfunction = setInterval(function () {
+
+            // Get todays date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now an the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="countdown"
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(countdownfunction);
+                document.getElementById("coming-soon").innerHTML = "Jen Yi,";
+                document.getElementById("countdown").innerHTML = "Good Luck!";
+            } else {
+                document.getElementById("coming-soon").innerHTML = "Jen Yi, you got...";
+            }
+        }, 1000);
+    </script>
+
+
+    <!-- JQuery -->
+    <Script src="js/jquery.min.js"></Script>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="js/owl-carousel/owl.carousel.min.js"></script>
+
+    <!-- Waypoints JS -->
+    <script src="js/waypoints/jquery.waypoints.min.js"></script>
+
+    <!-- Isotope JS -->
+    <script src="js/isotope/isotope.pkgd.min.js"></script>
+
+    <!-- Magnific Popup JS -->
+    <script src="js/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Responsive Tabs JS -->
+    <script src="js/responsive-tabs/jquery.responsiveTabs.min.js"></script>
+
+    <!-- Counter JS -->
+    <script src="js/counter/jquery.counterup.min.js"></script>
+
+    <!-- Easing JS -->
+    <script src="js/easing/jquery.easing.1.3.min.js"></script>
+
+    <!-- WOW JS -->
+    <script src="js/wow/wow.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
