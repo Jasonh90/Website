@@ -547,7 +547,7 @@ ul.social-list li:nth-child(5) a:hover {
     background-attachment: fixed;
 */
 #statement {
-    background: url("../../img/tech/tech-quote.jpg") no-repeat fixed center;
+    background: url("../../img/misc/tech-quote.jpg") no-repeat fixed center;
     background-size: cover;
 }
 
