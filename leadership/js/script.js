@@ -81,7 +81,7 @@ $(window).on('load', function() {
                 Magnifier
 ======================================== */
 $(function() {
-    $("#portfolio-wrapper").magnificPopup({
+    $("#goals-wrapper").magnificPopup({
         delegate: 'a', //child items selector, by clicking on it popup will open
         type: 'image',
         gallery: {
@@ -107,10 +107,10 @@ $(function() { //short form of above.
 });
 
 /* ===================================== 
-                Services
+                Strengths
 ======================================== */
 $(function() {
-    $('#services-tabs').responsiveTabs({
+    $('#strengths-tabs').responsiveTabs({
         animation: 'slide'
     });
 });

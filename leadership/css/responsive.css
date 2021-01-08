@@ -108,13 +108,13 @@
         font-size: 29px;
     }
 
-    /* Services */
-    #services-tabs .tab-bg {
+    /* Strengths */
+    #strengths-tabs .tab-bg {
         padding: 16px 30px;
         min-height: 399px;
     }
 
-    .service-tab p {
+    .strength-tab p {
         line-height: 20px;
     }
 }
@@ -153,7 +153,7 @@
         line-height: 30px;
     }
 
-    /* Services */
+    /* Strengths */
     .r-tabs-accordion-title {
         text-align: center;
         margin-bottom: 10px;
@@ -294,7 +294,7 @@
         line-height: 30px;
     }
 
-    /* Interests */
+    /* Weaknesses */
     .horizontal-heading {
         margin-bottom: 40px;
     }
@@ -303,7 +303,7 @@
         font-size: 30px;
     }
 
-    #interests img {
+    #weaknesses img {
         margin: 35px 0;
     }
 
@@ -316,7 +316,7 @@
         font-size: 18px;
     }
 
-    /* Services */
+    /* Strength */
     .r-tabs-accordion-title {
         text-align: center;
         margin-bottom: 10px;
@@ -342,21 +342,21 @@
         transition: border-color 300ms linear;
     }
 
-    #services-tabs .tab-bg {
+    #strengths-tabs .tab-bg {
         text-align: center;
         padding: 40px 30px;
     }
 
-    #services-tabs h2 {
+    #strengths-tabs h2 {
         font-size: 40px;
     }
 
-    #services-tabs h3 {
+    #strengths-tabs h3 {
         font-size: 28px;
     }
 
     /* Portfolio */
-    #portfolio {
+    #goals {
         padding-bottom: 0;
     }
 
@@ -473,8 +473,8 @@
         line-height: 25px;
     }
     
-    /* Services */
-    #services .horizontal-heading {
+    /* Strengths */
+    #strengths .horizontal-heading {
         margin-bottom: 100px
     }
 }

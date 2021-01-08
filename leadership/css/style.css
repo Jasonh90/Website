@@ -570,9 +570,9 @@ ul.social-list li:nth-child(5) a:hover {
 }
 
 /* ===================================== 
-                Interests 01
+                Weaknesses 01
 ======================================== */
-#interests img {
+#weaknesses img {
     margin: 60px 0;
 }
 
@@ -620,11 +620,11 @@ ul.social-list li:nth-child(5) a:hover {
 /* ===================================== 
                 Portfolio
 ======================================== */
-#portfolio {
+#goals {
     padding-bottom: 160px;
 }
 
-#portfolio .vertical-heading {
+#goals .vertical-heading {
     margin-bottom: 50px;
 }
 
@@ -813,16 +813,16 @@ ul.social-list li:nth-child(5) a:hover {
 /* ===================================== 
                 Testimonials
 ======================================== */
-#services {
+#strengths {
     background: #f4f4f4;
 }
 
 
-#services .horizontal-heading {
+#strengths .horizontal-heading {
     height: 80px;
 }
 
-#services .horizontal-heading hr {
+#strengths .horizontal-heading hr {
     width: 250px;
     height: 1px;
     background-color: #f4c613;
@@ -831,15 +831,15 @@ ul.social-list li:nth-child(5) a:hover {
     border: none;
 }
 
-#services-tabs ul {
+#strengths-tabs ul {
     margin-bottom: 40px;
 }
 
-#services-tabs ul li {
+#strengths-tabs ul li {
     padding: 5px 30px;
 }
 
-#services-tabs ul li a {
+#strengths-tabs ul li a {
     font-family: "Raleway", sans-serif;
     font-size: 13px;
     color: #212226;
@@ -851,7 +851,7 @@ ul.social-list li:nth-child(5) a:hover {
 
 /* Tab Active State */
 
-#services-tabs ul li.r-tabs-state-active a {
+#strengths-tabs ul li.r-tabs-state-active a {
     color: #f4c613;
     font-weight: 700;
     border-bottom: 3px solid #f4c613;
@@ -860,37 +860,37 @@ ul.social-list li:nth-child(5) a:hover {
     transition: border-color 300ms linear;
 }
 
-.service-tab .col-md-6 {
+.strength-tab .col-md-6 {
     padding: 0;
 }
 
-.service-tab img {
+.strength-tab img {
     width: 100%;
     margin: 0 auto;
     min-height: 480px;
     max-height: 480px;
 }
 
-.service-tab .tab-bg {
+.strength-tab .tab-bg {
     background: #fff;
     padding: 59px 30px;
     min-height: 480px;
     max-height: 480px;
 }
 
-.service-tab h2 {
+.strength-tab h2 {
     font-size: 48px;
     color: #bbb;
     margin-bottom: 20px;
     font-weight: 100;
 }
 
-.service-tab h3 {
+.strength-tab h3 {
     font-size: 32px;
     margin-bottom: 30px;
 }
 
-.service-tab p {
+.strength-tab p {
     line-height: 24px;
     margin-bottom: 30px;
 }
