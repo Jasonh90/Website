@@ -19,6 +19,11 @@ http://www.color-blindness.com/color-name-hue/
         Deep Sky Blue:      #0FCFFF
 ===================================== */
 
+:root {
+    --x-pos: 20px;
+    --y-pos: 15px;
+}
+
 /* ===================================== 
                 Html, Body
 ======================================== */
@@ -684,7 +689,7 @@ ul.social-list li:nth-child(5) a:hover {
                 Portfolio
 ======================================== */
 #goals {
-    padding-bottom: 160px;
+    /* padding-bottom: 160px; */
 }
 
 #goals .vertical-heading {
@@ -1017,6 +1022,13 @@ ul.social-list li:nth-child(5) a:hover {
 }
 
 /* ===================================== 
+                Goals
+======================================== */
+#goals {
+    background-color: orange;
+}
+
+/* ===================================== 
                 Contact
 ======================================== */
 /* Contact Left Side */
@@ -1211,3 +1223,38 @@ ul.navbar-nav > li > a:focus {
     -webkit-animation-delay: 3s;
     animation-delay: 3s;
 }
+
+.floating__circle {   
+    cursor: default;
+    /* animation-name: floating;  */
+    transform: translate(var(--x-pos), var(--y-pos));
+    transition: all 750ms linear;
+    /* animation-duration: 2s;  */
+    /* animation-iteration-count: infinite;  */
+    /* animation-timing-function: ease-in-out;  */
+    margin: 25px auto;
+
+    height: 150px; 
+    width: 150px; 
+    background: greenyellow; 
+    padding: 10px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    border-radius: 90px;
+    box-shadow: 0px 0px 10px 10px greenyellow;
+} 
+
+.custom__invisible {
+    opacity: 0;
+}
+  
+/* @keyframes floating { 
+    0% { transform: translate(0,  0px); } 
+    50%  { transform: translate(var(--x-pos), var(--y-pos)); } 
+    100%   { transform: translate(0, -0px); }     
+}  */
+

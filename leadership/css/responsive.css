@@ -111,7 +111,7 @@
     /* Strengths */
     #strengths-tabs .tab-bg {
         padding: 16px 30px;
-        min-height: 399px;
+        /* min-height: 399px; */
     }
 
     .strength-tab p {

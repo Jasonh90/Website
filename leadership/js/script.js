@@ -283,3 +283,35 @@ var submitted = false;
 //         alert('Thank you so much for reaching out! I will reply shortly. If you would like to send another message, you can do so below. Have a great day!');
 //     }
 // }
+
+/* ===================================== 
+                Goals
+======================================== */
+setInterval(() => {
+    document.querySelectorAll(".floating__circle").forEach((circle) => {
+        const dist = 30;
+        $(circle).css({"transform": `translate(${Math.random()*dist}px, ${Math.random()*dist}px)`});
+    })
+}, 750);
+
+var circleHtmls = [
+    "<strong>Voice</strong> my Opinions",
+    "Be in the <strong>Spotlight</strong>",
+    "Sense the <strong>Aura</strong> of the Room",
+    "Work for Company: <strong>Internal</strong> & <strong>Flexible</strong>",
+    "<strong>Accurately estimate</strong> the time I have to do things",
+    "Become well-rounded in <strong>conflict</strong> handling",
+    "Have the <strong>courage</strong> to face my fears",
+    "Build a larger <strong>network</strong>",
+].sort(() => Math.random() - 0.5);
+
+$(".floating__circle").click(function() {
+    const circle = $(this);
+    if (circle.hasClass("custom__invisible")) {
+        circle.html(circleHtmls.pop());
+    } else {
+        circleHtmls.push(circle.html());
+        circleHtmls.sort(() => Math.random() - 0.5);
+    }
+    circle.toggleClass("custom__invisible");
+});
