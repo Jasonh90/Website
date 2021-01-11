@@ -230,9 +230,17 @@ $(function() {
                 Animation
 ======================================== */
 
+function afterReveal (el) {
+	if (el.classList.contains('hideInAfterAnimate')) {
+        el.addEventListener('animationend', function () {
+            $(this).delay(1500).fadeOut();
+        });
+    }
+}
+
 /* animate on scroll */
 $(function() {
-    new WOW().init();
+    new WOW({ callback: afterReveal }).init();
 });
 
 $(window).on('load', function() {
