@@ -117,6 +117,10 @@
     .strength-tab p {
         line-height: 20px;
     }
+
+    .interest__p__parent {
+        height: 140px;
+    }
 }
 
 /* Small Devices (Portrait Tablets & Small Desktops) */
@@ -167,6 +171,10 @@
         font-weight: 400;
         padding: 0;
         text-decoration: none;
+    }
+
+    .interest__p__parent {
+        height: 190px;
     }
 
     /* Tab Active State */
@@ -314,6 +322,10 @@
 
     .interest h4 {
         font-size: 18px;
+    }
+
+    .interest__p__parent {
+        height: 130px;
     }
 
     /* Strength */
